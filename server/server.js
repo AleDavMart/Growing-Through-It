@@ -25,6 +25,48 @@ app.get('/', async(req, res) => {
     res.send(200)
 })
 
+app.Post('/newuser', async(req, res) =>{
+
+    const newUser = req.body; 
+    console.log(newUser);
+
+    User.create({ "userName": newUser.username,
+    "icon": newUser.icon,
+    "postNumb": "",
+    "deviceID": newUser.deviceID,
+    "roots": {
+        "contact1": {
+            "name": "test",
+            "lastName": "test",
+            "phoneNumber": "4081234567",
+            "relation": "test",
+            "priority": "1"
+        },
+        "contact2": {
+            "name": "test2",
+            "lastName": "test2",
+            "phoneNumber": "testnumber",
+            "relation": "test2",
+            "priority": "2"
+        }
+    }})
+
+    return res.send(newUser);
+})
+
+app.post('/newPost', async(req, res) =>{
+    const newPost = req.body
+     
+    console.log(newPost)
+
+    Post.create({
+        "title": newPost.title,
+        "body": newPost.body,
+        "author": newPost.author})
+
+    return res.send(newPost)
+})
+
 /****************************** */
 app.listen(PORT, ()=>{
     console.log(`Your server is now listening to port ${PORT}`)
