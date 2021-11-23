@@ -72,7 +72,7 @@ function BottomTabNavigator() {
         name="TabOne"
         component={TabOneScreen}
         options={({ navigation }: RootTabScreenProps<'TabOne'>) => ({
-          title: "",
+          title: "Journal",
           tabBarIcon: ({ color }) => <MaterialCommunityIcons name="note-text" size={32} color={color} />,
           headerRight: () => (
             <Pressable
@@ -89,7 +89,7 @@ function BottomTabNavigator() {
         name="TabTwo"
         component={TabTwoScreen}
         options={{
-          title: "",
+          title: "Explore",
           tabBarIcon: ({ color }) => <MaterialIcons name="explore" size={32} color={color} />,
         }}
       />
