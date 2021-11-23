@@ -1,0 +1,44 @@
+{
+    "userData":[{
+        "userName": "partyPlanta",
+        "icon": "",
+        "postNumb": "",
+        "deviceID": "",
+        "roots": {
+            "contact1": {
+                "name": "Koko",
+                "lastName": "Pothos",
+                "phoneNumber": "4081234567",
+                "relation": "friend",
+                "priority": "1"
+            },
+            "contact2": {
+                "name": "",
+                "lastName": "",
+                "phoneNumber": "",
+                "relation": "",
+                "priority": ""
+            }
+        }},
+        {
+            "userName": "figgyFun",
+            "icon": "",
+            "postNumb": "",
+            "deviceID": "",
+            "roots": {
+                "contact1": {
+                    "name": "Green",
+                    "lastName": "Sun",
+                    "phoneNumber": "4081234567",
+                    "relation": "friend",
+                    "priority": "2"
+                },
+                "contact2": {
+                    "name": "",
+                    "lastName": "",
+                    "phoneNumber": "",
+                    "relation": "",
+                    "priority": ""
+                }
+            }}
+]}
