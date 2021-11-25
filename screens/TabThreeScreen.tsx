@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { useState } from 'react';
-import { StyleSheet, TextInput, Button } from 'react-native';
+import { StyleSheet, TextInput, Button, Pressable } from 'react-native';
 
 import EditScreenInfo from '../components/EditScreenInfo';
 import { Text, View } from '../components/Themed';
@@ -46,10 +46,13 @@ export default function TabThreeScreen({ navigation }) {
                     defaultValue={root1PNText}
                 />
                 <View style={styles.separator} lightColor="#eee" darkColor="rgba(255,255,255,0.1)" />
-                <Button
-                    title="Save"
+                <Pressable
                     onPress={() => navigation.navigate("Root")}
-                />
+                    style={styles.button}>
+                    <Text style={styles.buttonText}>
+                        Save
+                    </Text>
+                </Pressable>
             </View>
         );
     } else {
@@ -79,4 +82,17 @@ const styles = StyleSheet.create({
         height: 1,
         width: '80%',
     },
+    button: {
+        backgroundColor: '#5aab61',
+        borderRadius: 50,
+        width: 200,
+        height: 50,
+        alignItems: 'center',
+        padding: 12
+    },
+    buttonText: {
+        fontSize: 20,
+        fontWeight: 'bold',
+        color: 'white',
+    }
 });
