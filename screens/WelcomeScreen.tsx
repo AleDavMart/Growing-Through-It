@@ -6,15 +6,11 @@ import { StyleSheet, Platform, Button, Pressable, ImageBackground } from "react-
 import { View, Text } from "../components/Themed";
 
 export default function WelcomeScreen({ navigation }) {
-    const image = { uri: '../assets/images/MoodTracker.png' };
     return (
         <View style={styles.container}>
-            <ImageBackground source={image} resizeMode="cover" style={styles.image}>
-                <Text style={styles.title}>Growing Through It</Text>
-                <View style={styles.separator} lightColor="#eee" darkColor="rgba(255,255,255,0.1)" />
-                <Pressable
-                    onPress={() => navigation.navigate("Root")}
-                    style={styles.button}>
+            <ImageBackground source={require('../assets/images/MoodTracker.png')}
+                resizeMode="cover" style={styles.image}>
+                <Pressable onPress={() => navigation.navigate("Root")} style={styles.button}>
                     <Text style={styles.buttonText}>
                         Let's Grow
                     </Text>
@@ -25,7 +21,9 @@ export default function WelcomeScreen({ navigation }) {
         </View>
     );
 }
-
+const buttonColor = '#FFF9DF';
+// const buttonColor = '#ACC2A0';
+const buttonTextColor = '#ACC2A0';
 const styles = StyleSheet.create({
     container: {
         flex: 1,
@@ -42,19 +40,23 @@ const styles = StyleSheet.create({
         width: '80%',
     },
     button: {
-        backgroundColor: '#5aab61',
+        backgroundColor: buttonColor,
         borderRadius: 50,
         width: 200,
         height: 50,
         alignItems: 'center',
-        padding: 12
+        padding: 12,
+        margin: 'auto',
+        marginBottom: '20%'
     },
     buttonText: {
         fontSize: 20,
         fontWeight: 'bold',
-        color: 'white',
+        color: buttonTextColor,
     },
     image: {
+        width: '100%',
+        height: '100%',
         flex: 1,
         justifyContent: "center"
     },
