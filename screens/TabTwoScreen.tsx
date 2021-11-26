@@ -6,12 +6,12 @@ import { Text, View } from '../components/Themed';
 
 export default function TabTwoScreen() {
   const resources = [
-    { name: "name1", desc: "desc1", id: "001" },
-    { name: "name2", desc: "desc2", id: "002" },
-    { name: "name3", desc: "desc3", id: "003" },
-    { name: "name4", desc: "desc4", id: "004" },
-    { name: "name5", desc: "desc5", id: "005" },
-    { name: "name6", desc: "desc6", id: "006" }
+    { name: "FindHelp.org", desc: "Search and connect to support. Financial assistance, food pantries, medical care, and other free or reduced-cost help starts here.", id: "001" },
+    { name: "2-1-1", desc: "211 is a free information and referral service that connects people to health and human services in their community 24 hours a day, 7 days a week.", id: "002" },
+    { name: "Don't Call The Police", desc: "Dontcallthepolice.com was founded in June 2020 and is an online directory of local resources available as alternatives to contacting law enforcement.", id: "003" },
+    { name: "Bill Wilson Center - Contact Cares", desc: "Confidential 24/7 suicide and crisis helpline offering support for people experiencing mental health difficulties. Also offers specialized hotline for youth ages 7-24, providing supportive listening, crisis intervention, information and referrals.", id: "004" },
+    { name: "Black Mental Health Alliance", desc: "BMHA's mission is to develop, promote and sponsor trusted culturally-relevant educational forums, trainings and referral services that support the health and well-being of Black people and their communities.", id: "005" },
+    { name: "Call Blackline", desc: "BlackLine® provides a space for peer support, counseling, witnessing and affirming the lived experiences to folxs who are most impacted by systematic oppression with an LGBTQ+ Black Femme Lens.", id: "006" }
   ]
   return (
     <View style={styles.container}>
