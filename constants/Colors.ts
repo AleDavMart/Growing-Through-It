@@ -1,4 +1,3 @@
-// const tintColorLight = '#2f95dc'; // BLUE
 const tintColorLight = '#5aab61'; // GREEN
 const tintColorDark = '#fff';
 
@@ -17,4 +16,8 @@ export default {
     tabIconDefault: '#ccc',
     tabIconSelected: tintColorDark,
   },
+  custom: {
+    sage: "#ACC2A0",
+    sand: "#FFF9DF",
+  }
 };
